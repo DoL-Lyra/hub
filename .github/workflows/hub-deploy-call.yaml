@@ -4,7 +4,6 @@ name: Deploy Hub (Update)
 # act -s GITHUB_TOKEN="$(gh auth token)" --secret-file my.secrets --artifact-server-path /tmpfs/artifacts -j build-deploy
 
 on:
-  workflow_dispatch:
   workflow_call:
 jobs:
   build-deploy:
